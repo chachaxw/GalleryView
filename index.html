@@ -1,0 +1,192 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>个性照片墙|Simple Life</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/allstyle.css" rel="stylesheet" type="text/css">
+<link href="../../javascriptLib/animate.min.css" rel="stylesheet" type="text/css">
+<script src="js/respond.min.js"></script>
+<script src="js/mystyle.js"></script>
+<script src="js/move.js"></script>
+</head>
+<body>
+ <header>
+     <span style="text-shadow:#000 0 1 2px">
+      <img src="images/icon.png"/>
+     相片墙&nbsp;|&nbsp;Simple Life
+     </span>
+     <nav class="menu" id="menu">
+        <ul>
+           <i></i>
+           <li><a href="http://www.baidu.com" target="_blank">Baidu</a></li>
+           <li><a href="http://www.image.baidu.com" target="_blank">Photo</a></li>
+           <li><a href="http://www.youku.com" target="_blank">Youku</a></li>
+        </ul>
+     </nav>
+ </header>
+<div class="gridContainer clearfix">
+  <div id="imgBox">
+     <ul id="liststyle" class="liststyle">
+         <li class="active"><img src="images/img (1).jpg" /></li>
+         <li><img src="images/img (2).jpg" /></li>
+         <li><img src="images/img (3).jpg" /></li>
+         <li><img src="images/img (4).jpg" /></li> 
+         <li><img src="images/img (5).jpg" /></li>
+      </ul>
+      <ul id="images">
+         <li><img src="images/img (1).jpg" /></li>
+         <li><img src="images/img (2).jpg" /></li>
+         <li><img src="images/img (3).jpg" /></li> 
+         <li><img src="images/img (4).jpg" /></li>
+         <li><img src="images/img (5).jpg" /></li>     
+     </ul>
+  </div>
+  <div id="LayoutDiv1">
+    <div id="videoBox">
+        <video id="Video1" poster="images/bgimage1.jpg" width="100%" preload="auto" style="border-bottom:rgba(255,255,255,0.8) 2px solid">
+             <source src="video/【飞聆原声】  一直很安静  吉他指弹_超清.mp4" type="video/mp4"/>
+             <p>对不起，您的浏览器不支持Video标签！</p> 
+        </video>
+        <div id="buttonbar">
+            <button id="restart" onclick="restart();" title="重新开始">&diams;</button> 
+            <button id="rew" onclick="skip(-10)" title="快退">&lt;&lt;</button>
+            <button id="play" onclick="vidplay()" title="播放">&gt;</button>
+            <button id="fastFwd" onclick="skip(10)" title="快进">&gt;&gt;</button>
+        </div>
+<!--视频播放器控件-->
+<script>
+ var videoBox=document.getElementById('videoBox'),
+     buttonbar=document.getElementById('buttonbar'),
+	 volume=document.getElementById('volume');
+ videoBox.onmouseover=function(){
+	 startMove(buttonbar,{opacity:100});
+	 }
+ videoBox.onmouseout=function(){
+	 startMove(buttonbar,{opacity:0});
+	 }
+ function vidplay() {
+       var video = document.getElementById("Video1"),
+           button = document.getElementById("play");
+	   
+       if (video.paused) {
+          video.play();
+          button.textContent = "||";
+		  button.title="暂停";
+       } else {
+          video.pause();
+          button.textContent = ">";
+       }
+    }
+
+ function restart() {
+        var video = document.getElementById("Video1");
+        video.currentTime = 0;
+    }
+
+ function skip(value) {
+        var video = document.getElementById("Video1");
+        video.currentTime += value;
+    }
+	//声音控件
+ function volumeUp(vol){
+	 
+	 
+	 }
+ function volumeDown(vol){
+	 
+	 
+	 }
+</script>
+</div>
+    <div>
+      <div class="box1 style3" style="left:57%">
+         <img src="images/1.gif" />
+      </div>
+      <div class="box1 style4" style="left:57%">
+         <img src="images/2.png" />
+      </div>
+      <div class="box1 style5" style="left:57%">
+         <img src="images/3.gif" />
+      </div>
+    </div>
+    <div>
+       <div class="box1 style3" style="left:57%">
+         <img src="images/1.gif" />
+       </div>
+       <div class="box1 style4" style="left:57%">
+         <img src="images/2.png" />
+       </div>
+       <div class="box1 style5" style="left:57%">
+         <img src="images/3.gif" />
+       </div>
+    </div>
+    <div>
+       <div class="box1 style3" style="left:57%">
+         <img src="images/1.gif" />
+       </div>
+       <div class="box1 style4" style="left:57%">
+         <img src="images/2.png" />
+       </div>
+       <div class="box1 style5" style="left:57%">
+         <img src="images/3.gif" />
+       </div>
+    </div>
+    <div>
+       <div class="box1 style3" style="left:57%">
+         <img src="images/1.gif" />
+       </div>
+       <div class="box1 style4" style="left:57%">
+         <img src="images/2.png" />
+       </div>
+       <div class="box1 style5" style="left:57%">
+         <img src="images/3.gif" />
+       </div>
+    </div>
+    <div>
+       <div class="box1 style3" style="left:57%">
+         <img src="images/1.gif" />
+       </div>
+       <div class="box1 style4" style="left:57%">
+         <img src="images/2.png" />
+       </div>
+       <div class="box1 style5" style="left:57%">
+         <img src="images/3.gif" />
+       </div>
+    </div>
+    <div>
+       <div class="box1 style3" style="left:57%">
+         <img src="images/1.gif" />
+       </div>
+       <div class="box1 style4" style="left:57%">
+         <img src="images/2.png" />
+       </div>
+       <div class="box1 style5" style="left:57%">
+         <img src="images/3.gif" />
+       </div>
+    </div>
+    <div>
+       <div class="box1 style3" style="left:57%">
+         <img src="images/1.gif" />
+       </div>
+       <div class="box1 style4" style="left:57%">
+         <img src="images/2.png" />
+       </div>
+       <div class="box1 style5" style="left:57%">
+         <img src="images/3.gif" />
+       </div>
+    </div>
+  </div>
+</div>
+<footer>
+     POWERED BY CHACHA<sup>&reg;</sup><br/>
+     All Rights Reserved &copy;
+</footer>
+</body>
+</html>
